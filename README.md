@@ -18,7 +18,7 @@ No menu principal, você poderá escolher entre:
 ## INFORMAÇÕES SOBRE SAQUE
 
 Ao optar pela opção saque, você poderá subtrair do saldo perante as seguintes condições:
-* O saldo deve ser positivo (Realizar um depósito caso saldo seja maior ou igual a zero);
+* O saldo deve ser positivo (Realizar um depósito caso saldo seja igual a zero);
 * Um saque individual não pode ser superior que R$500;
 * O usuário está limitado a 3 (Três) saques diários.
 
