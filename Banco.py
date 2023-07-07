@@ -73,8 +73,8 @@ $--------------------------$
     elif user_input == "2":
         print("$-----SAQUE-----$")
         continuar = 1
-        
-        if(saldo == 0):
+
+        if saldo == 0:
             print("Você não tem saldo! Por favor, realize um depósito primeiro.")
             exit_input = input("Digite qualquer valor para sair...")
         else:
@@ -92,11 +92,9 @@ $--------------------------$
                             "Valor inválido. Digite um valor entre 0 (zero) e 500 (quinhentos): "
                         )
                     )
-                while(saque_input > saldo):
-                        print(f"Saldo atual: {saldo}")
-                        input(
-                            "Digite um valor inferior ao seu saldo atual: "
-                        )
+                while saque_input > saldo:
+                    print(f"Saldo atual: {saldo}")
+                    input("Digite um valor inferior ao seu saldo atual: ")
 
                 operacoes.append(f"- R$ {saque_input}")
                 n += 1
@@ -105,36 +103,27 @@ $--------------------------$
 
                 SAQUES_DIARIOS += 1
 
-                if SAQUES_DIARIOS == 3:
+                if(SAQUES_DIARIOS == 3):
                     voltar = 1
-                    exit_input = input(
-                        "Você atingiu o limite máximo de três saques diários. Digite qualquer valor para continuar..."
-                    )
+                    exit_input = input("Você atingiu o limite máximo de três saques diários. Digite qualquer valor para continuar...")
+                    
+                
+                elif(SAQUES_DIARIOS < 3):
+                    continuar = int(input("""Você deseja realizar mais um saque?
 
-                elif SAQUES_DIARIOS < 3:
-                    continuar = int(
-                        input(
-                            """Você deseja realizar mais um saque?
-
-    [1] Sim
-    [0] Não
+[1] Sim
+[0] Não
 
 
-    """
-                        )
-                    )
-                while continuar > 1 and continuar < 0:
-                    continuar = int(
-                        input(
-                            """Você deseja realizar mais um saque?
+"""))
+                while (continuar > 1 and continuar < 0):
+                    continuar = int(input("""Você deseja realizar mais um saque?
                                         
 [1] Sim
 [0] Não
 
 
-"""
-                        )
-                    )
+"""))
 
     elif user_input == "3":
         print("$-----EXTRATO-----$")
@@ -145,5 +134,13 @@ $--------------------------$
         exit_input = input("Digite qualquer valor para voltar...")
 
     else:
-        print("CANCELAR")
+        print("""
+$------CANCELAR------$
+#                    #
+# O Banco Imaginario #
+#      Agradece      #
+#                    #
+$--------------------$
+
+""")
         sys.exit()
