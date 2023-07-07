@@ -32,7 +32,7 @@ Ao optar pela opção saque, você poderá subtrair do saldo perante as seguinte
 
 * Exige saldo maior do que 0 (zero);
 * Se Recusa sacar um valor maior que o saldo atual;
-* Se recusa a sacar além do limite de 3 (três) saques diários
+* Se recusa a sacar além do limite de 3 (três) saques diários;
 * Se recusa a sacar um valor superior a 500 (quinhentos) reais.
 
 ## Extrato
