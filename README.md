@@ -21,3 +21,21 @@ Ao optar pela opção saque, você poderá subtrair do saldo perante as seguinte
 * O saldo deve ser positivo (Realizar um depósito caso saldo seja maior ou igual a zero);
 * Um saque individual não pode ser superior que R$500;
 * O usuário está limitado a 3 (Três) saques diários.
+
+
+# Informações sobre funcionamento
+## Depósito
+
+* Exige depósito maior que 0;
+
+## Saque
+
+* Exige saldo maior do que 0;
+* Recusa sacar um valor maior que o saldo atual;
+* Se recusa a sacar além do limite de três saques diários
+* Se recusa a sacar um valor superior a quinhentos reais.
+
+## Extrato
+
+* Depósitos e saques são adicionados a uma lista de operações;
+* Tal lista é imprimida juntamente ao saldo no momento do extrato.
